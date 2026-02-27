@@ -1,4 +1,4 @@
-.resources-section {
+.experience-section {
   scroll-margin-top: 30px;
 
   @include media(desktop) {
@@ -6,7 +6,7 @@
   }
 }
 
-.resources-section-wrapper {
+.experience-section-wrapper {
   padding-top: 55px;
   padding-bottom: 44px;
   max-width: 375px;
@@ -22,7 +22,7 @@
   }
 }
 
-.resources-container {
+.experience-container {
   padding: 0 10px;
 
   @include media(desktop) {
@@ -30,7 +30,7 @@
   }
 }
 
-.resources-title {
+.experience-title {
   max-width: 288px;
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +41,7 @@
   }
 }
 
-.resources-text {
+.experience-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -59,7 +59,7 @@
   }
 }
 
-.resources-swiper-container {
+.experience-swiper-container {
   max-width: 336px;
   margin-left: auto;
   margin-right: auto;
@@ -69,11 +69,11 @@
   }
 }
 
-.resources-swiper-container.show {
+.experience-swiper-container.show {
   visibility: visible;
 }
 
-.resources-swiper-wrapper {
+.experience-swiper-wrapper {
   @include media(desktop) {
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@
   }
 }
 
-.resources-list-item {
+.experience-list-item {
   box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.14);
   background: #fff;
   border-radius: 10px;
@@ -101,7 +101,7 @@
   }
 }
 
-.resources-title-wrapper {
+.experience-title-wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -111,7 +111,7 @@
   }
 }
 
-.resources-icon-wrapper {
+.experience-icon-wrapper {
   border-radius: 100%;
   background: #84ae7e;
   min-width: 50px;
@@ -124,14 +124,14 @@
   }
 }
 
-.resources-icon {
+.experience-icon {
   @include media(desktop) {
     width: 30px;
     height: 30px;
   }
 }
 
-.resources-item-title {
+.experience-item-title {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -142,7 +142,7 @@
   }
 }
 
-.resources-subtitle {
+.experience-subtitle {
   font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: 14px;
@@ -155,7 +155,7 @@
   }
 }
 
-.resources-item-text {
+.experience-item-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -168,7 +168,7 @@
   }
 }
 
-.resources-btn {
+.experience-btn {
   box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.09);
   background: #fff;
   border: 1px solid #2e6f40;
@@ -196,5 +196,65 @@
   }
 }
 
-.resources-btn-icon {
+.experience-btn-icon {
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.experience-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
+
+.experience-dot.active {
+  background-color: #4501d7;
 }
