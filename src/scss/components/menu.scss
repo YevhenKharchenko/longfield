@@ -1,11 +1,7 @@
 .context-menu {
-  background: #d5ffce;
+  background: #0c1e29;
   width: 100%;
   height: 100%;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: start;
-  padding-bottom: 90px;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -24,7 +20,9 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  margin-bottom: 42px;
+  margin-right: 11px;
+  margin-top: 11px;
+  margin-bottom: 180px;
 
   @include media(desktop) {
     display: none;
@@ -38,30 +36,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 32px;
 }
 
 .context-list-item {
 }
 
 .context-list-link {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #151515;
-  transition: all 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease-in-out;
 
   &:active {
+    color: #fd9867;
   }
 }
 
 .context-cta-link {
-  background: #84ae7e;
-  border-radius: 15px;
-  padding: 8px 15px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  box-shadow:
+    0 -1px 8px -4px rgba(253, 152, 103, 0.1),
+    0 0 20px -3px rgba(253, 152, 103, 0.3);
+  background: linear-gradient(180deg, #fd9867 0%, #5d2230 100%);
+  border-radius: 33554400px;
+  padding: 8px 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -69,7 +75,7 @@
   max-width: max-content;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 83px;
 }
 
 .is-open {
