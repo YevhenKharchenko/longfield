@@ -1,0 +1,74 @@
+<section class="section booking-section" id="booking">
+  <div class="booking-bg-wrapper">
+    <div class="container booking-container">
+      <h2 class="section-title booking-title">Choose your adventure.</h2>
+      <ul class="booking-list">
+        <li class="booking-list-item">
+          <span class="booking-item-icon-wrapper"
+            ><svg class="booking-icon" width="34" height="34">
+              <use href="./img/sprite.svg#icon-user-round"></use></svg
+          ></span>
+          <h3 class="booking-item-title">Solo</h3>
+          <p class="booking-item-text">Perfect for individual adventurers</p>
+          <p class="booking-item-price">€15</p>
+          <a href="#contact" class="booking-item-btn">Book This Room</a>
+        </li>
+        <li class="booking-list-item">
+          <span class="booking-item-icon-wrapper"
+            ><svg class="booking-icon" width="34" height="34">
+              <use href="./img/sprite.svg#icon-users"></use></svg
+          ></span>
+          <h3 class="booking-item-title">Team</h3>
+          <p class="booking-item-text">Ideal for friends and family</p>
+          <p class="booking-item-price">
+            €12 <span class="booking-item-text-span">per person</span>
+          </p>
+          <a href="#contact" class="booking-item-btn">Book This Room</a>
+        </li>
+        <li class="booking-list-item">
+          <span class="booking-item-icon-wrapper"
+            ><svg class="booking-icon" width="34" height="34">
+              <use href="./img/sprite.svg#icon-building"></use></svg
+          ></span>
+          <h3 class="booking-item-title">Corporate Events</h3>
+          <p class="booking-item-text">Team building experiences</p>
+          <p class="booking-item-price">Custom</p>
+          <a href="#contact" class="booking-item-btn">Book This Room</a>
+        </li>
+      </ul>
+      <div class="booking-form-wrapper">
+        <p class="booking-form-title">Book Your Corporate Events Experience</p>
+        <form class="booking-form" id="contact-form">
+          <label class="booking-form-label">
+            <input
+              class="booking-form-input"
+              type="date"
+              name="date"
+              id="date"
+              required />
+            <span class="placeholder-text">Choose date</span>
+            <svg class="form-input-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-calendar"></use></svg
+          ></label>
+          <label class="booking-form-label">
+            <input
+              class="booking-form-input"
+              type="time"
+              name="time"
+              id="time"
+              required
+            />
+            <span class="placeholder-text">Choose time</span>
+            <svg class="form-input-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-clock"></use>
+            </svg>
+          </label>
+          <button type="submit" class="booking-form-save-btn">Book Now</button>
+        </form>
+        <div id="success-popup" class="modal-form hidden">
+          ✅ Your message has been sent!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

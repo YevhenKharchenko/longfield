@@ -1,0 +1,145 @@
+.contact-section {
+  padding-bottom: 56px;
+
+  @include media(desktop) {
+    padding-bottom: 114px;
+  }
+}
+
+.contact-bg-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/contact/contact-right-ellipse-mob.png),
+    url(../img/contact/contact-left-ellipse-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 200px right, bottom 200px left;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/contact/contact-right-ellipse-desk.png),
+      url(../img/contact/contact-left-ellipse-desk.png);
+    background-position: bottom 210px right, bottom 210px left;
+  }
+}
+
+.contact-container {
+  padding: 0 25px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.contact-links-wrapper {
+  border: 1px solid #ead1ab;
+  border-radius: 20px;
+  padding: 10px 21px 5px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 19px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    padding: 25px 5px 13px 35px;
+    max-width: 467px;
+    gap: 27px;
+    margin-bottom: 30px;
+  }
+}
+
+.contact-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+
+  @include media(desktop) {
+    gap: 28px;
+  }
+}
+
+.contact-icon-wrapper {
+  border: 1px solid #ead1ab;
+  border-radius: 10px;
+  min-width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    min-width: 51px;
+    height: 51px;
+  }
+}
+
+.mail-icon {
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.location-icon {
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.contact-link-text-wrapper {
+}
+
+.contact-link-title {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ead1ab;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  word-break: break-all;
+
+  @include media(desktop) {
+    font-size: 20px;
+    word-break: normal;
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  max-width: 304px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 730px;
+  }
+}

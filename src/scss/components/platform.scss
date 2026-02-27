@@ -1,0 +1,90 @@
+.platform-section {
+}
+
+.platform-bg-wrapper {
+  padding-top: 59px;
+  padding-bottom: 76px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 146px;
+    max-width: 1440px;
+  }
+}
+
+.platform-container {
+  padding: 0 20px;
+
+  @include media(desktop) {
+    padding: 0 150px;
+  }
+}
+
+.platform-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.platform-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 15px;
+  }
+}
+
+.platform-list-item {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  padding: 5px 11px;
+  max-width: 317px;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    padding: 26px 11px;
+    max-width: 387px;
+    min-height: 115px;
+  }
+}
+
+.platform-item-img-wrapper {
+  min-width: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    min-width: 79px;
+  }
+}
+
+.platform-img {
+}
+
+.platform-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #151515;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
