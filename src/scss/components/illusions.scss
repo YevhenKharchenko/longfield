@@ -1,0 +1,235 @@
+.illusions-section {
+  @include media(desktop) {
+  }
+}
+
+.illusions-section-wrapper {
+  padding-top: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    max-width: 1440px;
+  }
+}
+
+.illusions-container {
+  @include media(desktop) {
+  }
+}
+
+.illusions-title {
+  max-width: 307px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.illusions-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 333px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+    margin-bottom: 50px;
+    max-width: max-content;
+  }
+}
+
+.illusions-line-wrapper {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+}
+
+.illusions-item-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 270px;
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-icon-wrapper {
+  box-shadow:
+    0 8px 10px -6px rgba(253, 152, 103, 0.3),
+    0 20px 25px -5px rgba(253, 152, 103, 0.3);
+  background: linear-gradient(180deg, #fd9867 0%, #5d2230 100%);
+  border: 4px solid #0c1e29;
+  border-radius: 33554400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 64px;
+  width: 64px;
+  height: 64px;
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-icon {
+  @include media(desktop) {
+  }
+}
+
+.illusions-line-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-swiper-container {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 100%;
+  }
+}
+
+.illusions-swiper-container.show {
+  visibility: visible;
+}
+
+.illusions-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.illusions-list-item {
+  box-shadow:
+    0 8px 10px -6px rgba(0, 0, 0, 0.1),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px 20px 11px 20px;
+  width: 100% !important;
+  max-width: 270px;
+  min-height: 245px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-item-title {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 152, 103, 0.2) 0%,
+    rgba(93, 34, 48, 0.2) 100%
+  );
+  border: 1px solid rgba(253, 152, 103, 0.3);
+  border-radius: 33554400px;
+  padding: 4px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #fd9867;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-item-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #f4f7fa;
+  margin-bottom: 18px;
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.41429;
+  text-align: center;
+  color: rgba(232, 238, 242, 0.7);
+
+  @include media(desktop) {
+  }
+}
+
+.illusions-dot {
+  border-radius: 100%;
+  fill: rgba(255, 255, 255, 0.5);
+  width: 4px;
+  height: 4px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
+
+.illusions-dot.active {
+  background-color: #fff;
+  transform: scale(1.3);
+}
+
+.illusions-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 18px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+  }
+}
