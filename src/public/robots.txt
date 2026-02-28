@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://ecounitix.online/sitemap.xml
+Sitemap: https://longfield.pro/sitemap.xml

@@ -1,32 +1,29 @@
 .contact-section {
-  padding-bottom: 56px;
+  background: linear-gradient(180deg, #0a1820 0%, #0c1e29 50%, #0c1e29 100%);
 
   @include media(desktop) {
-    padding-bottom: 114px;
   }
 }
 
-.contact-bg-wrapper {
+.contact-wrapper {
+  padding-top: 10px;
+  padding-bottom: 50px;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/contact/contact-right-ellipse-mob.png),
-    url(../img/contact/contact-left-ellipse-mob.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom 200px right, bottom 200px left;
-  background-size: auto, auto;
+  margin: 0 auto;
 
   @include media(desktop) {
+    padding-top: 20px;
+    padding-bottom: 134px;
     max-width: 1440px;
-    background-image: url(../img/contact/contact-right-ellipse-desk.png),
-      url(../img/contact/contact-left-ellipse-desk.png);
-    background-position: bottom 210px right, bottom 210px left;
   }
 }
 
 .contact-container {
-  padding: 0 25px;
+  @include media(desktop) {
+  }
+}
 
+.contact-content-wrapper {
   @include media(desktop) {
   }
 }
@@ -35,111 +32,78 @@
   margin-bottom: 30px;
 
   @include media(desktop) {
+    max-width: 977px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
   }
 }
 
-.contact-links-wrapper {
-  border: 1px solid #ead1ab;
-  border-radius: 20px;
-  padding: 10px 21px 5px 19px;
+.contact-text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 19px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    padding: 25px 5px 13px 35px;
-    max-width: 467px;
-    gap: 27px;
-    margin-bottom: 30px;
-  }
-}
-
-.contact-link-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 19px;
+  gap: 5px;
+  margin-bottom: 25px;
 
   @include media(desktop) {
-    gap: 28px;
-  }
-}
-
-.contact-icon-wrapper {
-  border: 1px solid #ead1ab;
-  border-radius: 10px;
-  min-width: 41px;
-  height: 41px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-    min-width: 51px;
-    height: 51px;
-  }
-}
-
-.mail-icon {
-  @include media(desktop) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.location-icon {
-  @include media(desktop) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.contact-link-text-wrapper {
-}
-
-.contact-link-title {
-  font-family: 'Cinzel', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #ead1ab;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.contact-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  word-break: break-all;
-
-  @include media(desktop) {
-    font-size: 20px;
-    word-break: normal;
+    gap: 10px;
+    margin-bottom: 42px;
   }
 }
 
 .contact-text {
   font-family: 'Inter', sans-serif;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
+  line-height: 2.28571;
   text-align: center;
-  color: #fff;
-  max-width: 304px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #e8eef2;
 
   @include media(desktop) {
-    font-size: 24px;
-    max-width: 730px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+.contact-cta-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px -12px #662933;
+  background: linear-gradient(180deg, #fd9867 0%, #5d2230 100%);
+  border-radius: 33554400px;
+  padding: 5px 23px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 1.55556;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-btn-text {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 2.8;
+  text-align: center;
+  color: rgba(232, 238, 242, 0.7);
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
   }
 }

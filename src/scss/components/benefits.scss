@@ -1,34 +1,31 @@
-.about-features-bg-wrapper {
-  background: linear-gradient(180deg, #0c1e29 0%, #0a1820 100%);
+.benefits-section {
 }
 
-.about-section {
-}
-
-.about-bg-wrapper {
+.benefits-bg-wrapper {
   padding-top: 50px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 42px;
+    padding-bottom: 100px;
     max-width: 1440px;
   }
 }
 
-.about-container {
+.benefits-container {
   @include media(desktop) {
   }
 }
 
-.about-title {
+.benefits-title {
   @include media(desktop) {
   }
 }
 
-.about-text {
+.benefits-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -43,45 +40,42 @@
   @include media(desktop) {
     font-size: 18px;
     line-height: 1.55556;
-    max-width: 827px;
+    max-width: max-content;
   }
 }
 
-.about-content-wrapper {
+.benefits-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.benefits-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-  }
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  max-width: 293px;
-
-  @include media(desktop) {
-    max-width: 537px;
-  }
-}
-
-.about-list-item {
-  display: flex;
-  align-items: center;
   gap: 16px;
+  width: 100%;
+  max-width: 199px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    gap: 20px;
+    max-width: 255px;
+    margin-bottom: 36px;
+  }
+}
+
+.benefits-list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 
   @include media(desktop) {
   }
 }
 
-.about-item-img-wrapper {
+.benefits-item-img-wrapper {
   box-shadow:
     0 4px 6px -4px rgba(253, 152, 103, 0.1),
     0 10px 15px -3px rgba(253, 152, 103, 0.1);
@@ -92,8 +86,8 @@
   );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-  min-width: 48px;
-  height: 48px;
+  min-width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,27 +98,19 @@
   }
 }
 
-.about-icon {
+.benefits-icon {
   min-width: 28px;
 
   @include media(desktop) {
   }
 }
 
-.about-item-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.about-item-title {
+.benefits-item-text {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 2;
+  color: #f4f7fa;
 
   @include media(desktop) {
     font-size: 20px;
@@ -132,20 +118,16 @@
   }
 }
 
-.about-item-text {
+.benefits-bottom-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
   color: rgba(255, 255, 255, 0.7);
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.625;
-  }
-}
-
-.about-img {
-  @include media(desktop) {
-    min-width: 616px;
+    font-size: 18px;
+    line-height: 1.55556;
   }
 }
